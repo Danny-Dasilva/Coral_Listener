@@ -39,7 +39,7 @@ echo 0 > functions/hid.usb0/subclass
 echo 3 > functions/hid.usb0/report_length
 
 # Write report descriptor ( X and Y analog joysticks plus 8 buttons )
-echo "05010904A1011581257F0901A10009300931750895028102C005091901290815002501750195088102C0" | xxd -r -ps > functions/hid.usb0/report_desc
+echo "05010904A1011581257F0901A1000930093109320933750895028102C005091901290815002501750195088102C0" | xxd -r -ps > functions/hid.usb0/report_desc
 
 # Create configuration file
 

@@ -9,8 +9,7 @@ import termios
 import time
 from time import sleep
 import random
-from importlib import reload
-reload(sys)
+
 
 
 def getch():
@@ -64,7 +63,7 @@ def getch():
 
 def write_report(report):
     with open('/dev/hidg0', 'rb+') as fd:
-        fd.write(report.encode())
+        fd.write(report.encode('iso-8859-1'))
 	
 # Initialization 
 def init():
